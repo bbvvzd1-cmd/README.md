@@ -1,0 +1,39 @@
+# Streamlit Crypto Dashboard
+
+A simple, live crypto price dashboard for Binance using Streamlit.  
+**Works perfectly on [Replit](https://replit.com/), Hugging Face, or locally. No Docker, no TA-Lib required.**
+
+## Features
+
+- Select symbols (BTC, ETH, BNB, SOL, XRP)
+- Pick interval (1m to 1d)
+- See live price chart and latest prices
+- Auto-refreshes every 60 seconds
+
+## Quick Start
+
+### On Replit
+
+1. Create a new Python Repl
+2. Add these files: `app.py` and `requirements.txt`
+3. In the Shell, run:
+   ```
+   streamlit run app.py --server.port=8080 --server.enableCORS=false
+   ```
+4. Click “Open in a new tab” or use the webview
+
+### Locally
+
+1. Install requirements:
+   ```
+   pip install -r requirements.txt
+   ```
+2. Run:
+   ```
+   streamlit run app.py
+   ```
+3. Open the shown URL in your browser.
+
+## License
+
+MIT
