@@ -31,6 +31,13 @@ st.subheader(f"{symbol} Price Chart")
 st.line_chart(df.set_index("open_time")["close"])
 
 st.write("Latest Prices:")
+print("App started")  # Add at the top
+
+def fetch_binance_data(...):
+    print("Fetching Binance data...")  # Inside the function
+    ...
+    print("Data fetched:", df.shape)
+    return df
 st.dataframe(df.tail(10)[["open_time", "close"]].rename(columns={"open_time": "Time", "close": "Close Price"}))
 
 st.caption("Data from Binance. Updates every 60 seconds.")
